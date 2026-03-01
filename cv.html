@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV — Vornicescu Vasile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">VV</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="cv.html" class="active">CV</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="icon-sun">&#9788;</span>
+            <span class="icon-moon">&#9790;</span>
+        </button>
+    </nav>
+
+    <main class="page-content cv-page">
+        <div class="cv-header">
+            <h1 class="page-title">Curriculum Vitae</h1>
+            <a href="VornicescuVasileCV.pdf" class="btn btn-primary btn-sm" download>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 6px;">
+                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+                Download PDF
+            </a>
+        </div>
+
+        <div class="cv-content">
+
+            <!-- Professional Summary -->
+            <section class="cv-section">
+                <h2 class="cv-section-title">Professional Summary</h2>
+                <div class="cv-section-body">
+                    <p>
+                        Computer Science student with strong foundations in multithreading,
+                        networking, and performance-oriented C++ development.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="cv-section">
+                <h2 class="cv-section-title">Education</h2>
+                <div class="cv-section-body">
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <div>
+                                <h3 class="cv-entry-title">Faculty of Automatic Control and Computer Science</h3>
+                                <p class="cv-entry-org">University Politehnica of Bucharest — 3rd Year</p>
+                            </div>
+                            <span class="cv-entry-date">GPA: 9.71 / 10</span>
+                        </div>
+                        <ul class="cv-entry-details">
+                            <li>Operating Systems, Data Structures &amp; Algorithms, Computer Networks</li>
+                            <li>Numerical Methods, Algorithm Analysis, Java OOP</li>
+                            <li>C &amp; Assembly Programming</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section class="cv-section">
+                <h2 class="cv-section-title">Experience</h2>
+                <div class="cv-section-body">
+
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <div>
+                                <h3 class="cv-entry-title">Teaching Assistant — Numerical Methods</h3>
+                                <p class="cv-entry-org">University Politehnica of Bucharest</p>
+                            </div>
+                            <span class="cv-entry-date">Feb 2025 — Present</span>
+                        </div>
+                        <ul class="cv-entry-details">
+                            <li>Guided students through applied numerical computing exercises</li>
+                            <li>Assisted in debugging and analyzing algorithmic implementations</li>
+                            <li>Strengthened practical understanding of linear algebra and numerical optimization</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="cv-section">
+                <h2 class="cv-section-title">Projects</h2>
+                <div class="cv-section-body">
+
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <div>
+                                <h3 class="cv-entry-title">YetAnotherTown — Real-Time Simulation Engine</h3>
+                                <p class="cv-entry-org">C++, OpenGL</p>
+                            </div>
+                            <span class="cv-entry-date">Jun 2025 — Present</span>
+                        </div>
+                        <ul class="cv-entry-details">
+                            <li>Designed a multithreaded simulation system for procedural road network generation using graph-based algorithms</li>
+                            <li>Implemented concurrent terrain processing pipelines supporting real-time terraforming operations</li>
+                            <li>Optimized CPU-bound components using task parallelism and efficient memory usage strategies</li>
+                        </ul>
+                    </div>
+
+                    <div class="cv-entry">
+                        <div class="cv-entry-header">
+                            <div>
+                                <h3 class="cv-entry-title">PyKingdom — Strategy Game Engine</h3>
+                                <p class="cv-entry-org">Python, OpenGL</p>
+                            </div>
+                            <span class="cv-entry-date">Sep 2024 — Jan 2025</span>
+                        </div>
+                        <ul class="cv-entry-details">
+                            <li>Collaborated in a 3-person team using Git-based workflows</li>
+                            <li>Implemented procedural map generation algorithms using scalable data structures</li>
+                            <li>Developed internal APIs to separate simulation logic from rendering systems</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Technical Skills -->
+            <section class="cv-section">
+                <h2 class="cv-section-title">Technical Skills</h2>
+                <div class="cv-section-body">
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Languages</h3>
+                            <ul class="skill-list">
+                                <li>C++</li>
+                                <li>C</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>OpenGL / GLSL</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Systems &amp; Concurrency</h3>
+                            <ul class="skill-list">
+                                <li>Multithreading</li>
+                                <li>Synchronization Primitives</li>
+                                <li>Sockets / TCP/IP</li>
+                                <li>Linux / Unix</li>
+                                <li>Client-Server Model</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Core CS &amp; Tools</h3>
+                            <ul class="skill-list">
+                                <li>Data Structures &amp; Algorithms</li>
+                                <li>Operating Systems</li>
+                                <li>Networking</li>
+                                <li>Object-Oriented Design</li>
+                                <li>Git &amp; GitHub</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Vornicescu Vasile. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

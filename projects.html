@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Vornicescu Vasile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">VV</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="cv.html">CV</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="icon-sun">&#9788;</span>
+            <span class="icon-moon">&#9790;</span>
+        </button>
+    </nav>
+
+    <main class="page-content">
+        <h1 class="page-title">Projects</h1>
+        <p class="page-subtitle">A selection of things I've built and worked on.</p>
+
+        <div class="projects-grid">
+
+            <!-- Project 1: Train Island -->
+            <article class="project-card">
+                <div class="project-header">
+                    <svg class="project-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    <div class="project-links">
+                        <a href="https://github.com/vorni22/TrainIsland" target="_blank" aria-label="Source code">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <h2 class="project-title">Train Island</h2>
+                <p class="project-description">
+                    A 3D train simulation game built with OpenGL. Navigate a locomotive across a
+                    procedurally generated island with Perlin noise terrain, collect resources from
+                    stations, and deliver them before time runs out. Features Phong shading,
+                    tunnels with occluded rendering, a minimap, and a mission system.
+                </p>
+                <ul class="project-tech">
+                    <li>C++</li>
+                    <li>OpenGL</li>
+                    <li>GLSL</li>
+                    <li>CMake</li>
+                </ul>
+            </article>
+
+            <!-- Project 2: YetAnotherTown -->
+            <article class="project-card">
+                <div class="project-header">
+                    <svg class="project-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M3 3h18v18H3zM9 3v18M15 3v18M3 9h18M3 15h18"/>
+                    </svg>
+                    <div class="project-links">
+                        <a href="https://github.com/vorni22/YetAnotherTown" target="_blank" aria-label="Source code">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <h2 class="project-title">YetAnotherTown</h2>
+                <p class="project-description">
+                    A work-in-progress real-time traffic simulation engine featuring
+                    an expandable multithreaded architecture, LOD-based terrain rendering,
+                    terraforming tools (flatten, smooth, raise, slope), and a cubic
+                    B&eacute;zier-based road-drawing system that auto-integrates into the
+                    road network with computed intersections.
+                </p>
+                <ul class="project-tech">
+                    <li>C++</li>
+                    <li>OpenGL</li>
+                    <li>Multithreading</li>
+                </ul>
+            </article>
+
+            <!-- Project 3: PyParser -->
+            <article class="project-card">
+                <div class="project-header">
+                    <svg class="project-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/>
+                    </svg>
+                    <div class="project-links">
+                        <a href="https://github.com/vorni22/PyParser" target="_blank" aria-label="Source code">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <h2 class="project-title">PyParser</h2>
+                <p class="project-description">
+                    A minimalistic parser built entirely from scratch in Python for
+                    educational purposes. Includes a custom regex engine, lexer, and
+                    grammar-driven parser &mdash; no external libraries used.
+                </p>
+                <ul class="project-tech">
+                    <li>Python</li>
+                    <li>Parsing</li>
+                    <li>Regex</li>
+                    <li>Compilers</li>
+                </ul>
+            </article>
+
+            <!-- Project 4: PyKingdom -->
+            <article class="project-card">
+                <div class="project-header">
+                    <svg class="project-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                        <line x1="12" y1="22.08" x2="12" y2="12"/>
+                    </svg>
+                    <div class="project-links">
+                        <a href="https://github.com/vorni22/PyKingdom" target="_blank" aria-label="Source code">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <h2 class="project-title">PyKingdom</h2>
+                <p class="project-description">
+                    A 4X strategy game inspired by the Civilization series, playable in
+                    hot-seat multiplayer. Features a hexagonal map with procedural generation,
+                    OpenGL rendering with custom GLSL shaders, 3D models built in Blender,
+                    and a city/unit management system &mdash; all powered by Python and PyGame.
+                </p>
+                <ul class="project-tech">
+                    <li>Python</li>
+                    <li>OpenGL</li>
+                    <li>PyGame</li>
+                    <li>GLSL</li>
+                </ul>
+            </article>
+
+            <!-- Project 5: AsynchronousCppLogger -->
+            <article class="project-card">
+                <div class="project-header">
+                    <svg class="project-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 014 17V5a2 2 0 012-2h14v14H6.5A2.5 2.5 0 004 19.5z"/>
+                    </svg>
+                    <div class="project-links">
+                        <a href="https://github.com/vorni22/AsynchronousCppLogger" target="_blank" aria-label="Source code">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <h2 class="project-title">Asynchronous C++ Logger</h2>
+                <p class="project-description">
+                    A lightweight asynchronous logging system in C++. The main process writes
+                    log messages to a shared memory buffer, while a separate logger process
+                    reads from that buffer and writes to a log file independently,
+                    keeping the main application non-blocking.
+                </p>
+                <ul class="project-tech">
+                    <li>C++</li>
+                    <li>Shared Memory</li>
+                    <li>IPC</li>
+                    <li>Makefile</li>
+                </ul>
+            </article>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Vornicescu Vasile. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
